@@ -19,14 +19,14 @@ const states = [
 const Weather = () => {
 
     const [weather, setWeather] = useState(states);
-    const [selectState,setSelectState] = useState('');
+    // const [selectState,setSelectState] = useState('');
     // const [periods, setPeriods] = useState([]);
 
     const fetchData = (event) => {
         event.preventDefault();
         const currentData = weather.filter((e) => e.stateName === event.target.value);
-        setSelectState(event.target.value);
-        console.log(selectState);
+        // setSelectState(event.target.value);
+        // console.log(selectState);
         const obj = currentData[0];
 
         getdata(obj.latitude, obj.longitude)
@@ -69,7 +69,7 @@ const Weather = () => {
                 <div className="body">
                     <h5>Forecast</h5>
                 </div>
-                {!selectState===null ?  {
+                {/* {!selectState===null ?  {
                     // periods.map((state) => {
                     //     return <div key={state.id} className="card">
                     //         <div className="card-body">
@@ -80,7 +80,7 @@ const Weather = () => {
                     //         </div>
                     //     </div>
                     // })
-                } : <div> </div>}
+                } : <div> </div>} */}
                
             </div>
 
