@@ -1,0 +1,22 @@
+.dropdown{
+    margin: 30px;
+}
+.body{
+    margin: 20px ;
+}
+.h5{
+    margin: 10px;
+
+}
+.h1{
+        text-align: center;
+    }
+.card{
+
+    width: 300px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    display: inline-flex;
+}
+    
